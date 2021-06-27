@@ -55,4 +55,6 @@ RUN cd /tmp && \
   `| tar -xzf - && \
   mv code-server* /usr/local/lib/code-server && \
   ln -s /usr/local/lib/code-server/code-server /usr/local/bin/code-server
-RUN code-server --install-extension liximomo.sftp ms-python.python formulahendry.code-runner --force
+RUN code-server --install-extension liximomo.sftp  --force
+RUN code-server --install-extension ms-python.python --force
+RUN code-server --install-extension formulahendry.code-runner --force
