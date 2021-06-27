@@ -36,7 +36,6 @@ ENV LANG=en_US.UTF-8
 RUN curl https://rclone.org/install.sh | bash
 RUN chsh -s /bin/bash
 ENV SHELL=/bin/bash
-RUN 
 RUN adduser --gecos '' --disabled-password coder && \
   echo "coder ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers.d/nopasswd
 
