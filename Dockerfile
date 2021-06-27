@@ -24,6 +24,7 @@ RUN apt-get install -y tzdata && \
     ssh \
     sudo \
     vim \
+    unzip \
     fuse \
     && rm -rf /var/lib/apt/lists/*
 
